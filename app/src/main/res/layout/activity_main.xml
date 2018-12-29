@@ -32,6 +32,13 @@
             android:text="Subscription"
             android:textAllCaps="false"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listOf"
+            android:text="List of Institutes"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

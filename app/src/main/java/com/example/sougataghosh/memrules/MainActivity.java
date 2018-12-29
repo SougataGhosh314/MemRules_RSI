@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1, b2, b3;
+    Button b1, b2, b3, b4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +44,21 @@ public class MainActivity extends AppCompatActivity {
                         SubscriptionActivity.class));
             }
         });
+
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,
+                        ListOfInstitutesActivity.class));
+            }
+        });
     }
 
     private void findViews(){
         b1 = findViewById(R.id.memRules);
         b2 = findViewById(R.id.AmendmemRules);
         b3 = findViewById(R.id.subscription);
+        b4 = findViewById(R.id.listOf);
     }
 
 
